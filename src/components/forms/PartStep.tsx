@@ -172,7 +172,7 @@ export function PartStep() {
             ))}
 
             {uploadedFiles.length < 5 && (
-              <label className="aspect-square rounded-lg border-2 border-dashed border-blanc/20 hover:border-or/50 cursor-pointer flex flex-col items-center justify-center text-blanc/40 hover:text-or transition-colors">
+              <label className="aspect-square rounded-lg border-2 border-dashed border-blanc/20 hover:border-primary/50 cursor-pointer flex flex-col items-center justify-center text-blanc/40 hover:text-primary transition-colors">
                 <Upload className="w-8 h-8 mb-2" />
                 <span className="text-xs text-center">Ajouter</span>
                 <input

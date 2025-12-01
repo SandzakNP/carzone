@@ -179,7 +179,7 @@ export function SearchForm() {
                   }}
                   className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
                     currentStep >= step.id
-                      ? "bg-gradient-to-br from-or to-or-light text-noir-deep"
+                      ? "bg-gradient-to-br from-primary to-primary-light text-blanc"
                       : "bg-noir-light border border-blanc/20 text-blanc/40"
                   }`}
                 >
@@ -191,7 +191,7 @@ export function SearchForm() {
                 </motion.div>
                 <span
                   className={`mt-2 text-sm font-medium hidden sm:block ${
-                    currentStep >= step.id ? "text-or" : "text-blanc/40"
+                    currentStep >= step.id ? "text-primary" : "text-blanc/40"
                   }`}
                 >
                   {step.title}
@@ -200,7 +200,7 @@ export function SearchForm() {
               {index < steps.length - 1 && (
                 <div
                   className={`flex-1 h-0.5 mx-2 transition-all duration-300 ${
-                    currentStep > step.id ? "bg-or" : "bg-blanc/10"
+                    currentStep > step.id ? "bg-primary" : "bg-blanc/10"
                   }`}
                 />
               )}

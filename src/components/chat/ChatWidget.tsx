@@ -62,16 +62,16 @@ export function ChatWidget() {
             className="absolute bottom-20 right-0 w-[360px] max-w-[calc(100vw-3rem)] glass rounded-2xl overflow-hidden shadow-luxury-lg"
           >
             {/* Header */}
-            <div className="bg-gradient-to-r from-or to-or-light p-4 flex items-center justify-between">
+            <div className="bg-gradient-to-r from-primary-navy to-primary p-4 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-noir-deep/20 flex items-center justify-center">
-                  <MessageCircle className="w-5 h-5 text-noir-deep" />
+                <div className="w-10 h-10 rounded-full bg-blanc/20 flex items-center justify-center">
+                  <MessageCircle className="w-5 h-5 text-blanc" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-noir-deep font-montserrat">
+                  <h4 className="font-semibold text-blanc font-montserrat">
                     Support CarZone
                   </h4>
-                  <p className="text-xs text-noir-deep/70">
+                  <p className="text-xs text-blanc/70">
                     Généralement en ligne
                   </p>
                 </div>
@@ -79,17 +79,17 @@ export function ChatWidget() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setIsMinimized(true)}
-                  className="p-1.5 rounded-full hover:bg-noir-deep/10 transition-colors"
+                  className="p-1.5 rounded-full hover:bg-blanc/10 transition-colors"
                   aria-label="Minimiser"
                 >
-                  <Minimize2 className="w-4 h-4 text-noir-deep" />
+                  <Minimize2 className="w-4 h-4 text-blanc" />
                 </button>
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="p-1.5 rounded-full hover:bg-noir-deep/10 transition-colors"
+                  className="p-1.5 rounded-full hover:bg-blanc/10 transition-colors"
                   aria-label="Fermer"
                 >
-                  <X className="w-4 h-4 text-noir-deep" />
+                  <X className="w-4 h-4 text-blanc" />
                 </button>
               </div>
             </div>
@@ -108,7 +108,7 @@ export function ChatWidget() {
                   <div
                     className={`max-w-[80%] p-3 rounded-2xl ${
                       msg.sender === "user"
-                        ? "bg-or text-noir-deep rounded-tr-sm"
+                        ? "bg-primary text-blanc rounded-tr-sm"
                         : "bg-noir-light text-blanc rounded-tl-sm"
                     }`}
                   >
@@ -116,7 +116,7 @@ export function ChatWidget() {
                     <span
                       className={`text-[10px] ${
                         msg.sender === "user"
-                          ? "text-noir-deep/60"
+                          ? "text-blanc/60"
                           : "text-blanc/40"
                       }`}
                     >
@@ -187,7 +187,7 @@ export function ChatWidget() {
         }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="w-16 h-16 rounded-full bg-gradient-to-r from-or to-or-light shadow-luxury flex items-center justify-center group animate-pulse-gold"
+        className="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-primary-light shadow-luxury flex items-center justify-center group animate-pulse-blue"
         aria-label={isOpen ? "Fermer le chat" : "Ouvrir le chat"}
       >
         <AnimatePresence mode="wait">
@@ -199,7 +199,7 @@ export function ChatWidget() {
               exit={{ rotate: 90, opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <X className="w-6 h-6 text-noir-deep" />
+              <X className="w-6 h-6 text-blanc" />
             </motion.div>
           ) : (
             <motion.div
@@ -209,7 +209,7 @@ export function ChatWidget() {
               exit={{ rotate: -90, opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <MessageCircle className="w-6 h-6 text-noir-deep" />
+              <MessageCircle className="w-6 h-6 text-blanc" />
             </motion.div>
           )}
         </AnimatePresence>

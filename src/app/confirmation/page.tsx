@@ -97,7 +97,7 @@ export default function ConfirmationPage() {
             <CardContent className="text-center py-8">
               <p className="text-blanc/60 mb-2">Numéro de demande</p>
               <div className="flex items-center justify-center gap-3">
-                <span className="text-2xl md:text-3xl font-bold font-montserrat text-or">
+                <span className="text-2xl md:text-3xl font-bold font-montserrat text-primary">
                   {requestData.requestNumber}
                 </span>
                 <button
@@ -128,7 +128,7 @@ export default function ConfirmationPage() {
           <Card variant="glass" className="mb-6">
             <CardContent>
               <h3 className="font-semibold font-montserrat mb-4 flex items-center gap-2">
-                <Car className="w-5 h-5 text-or" />
+                <Car className="w-5 h-5 text-primary" />
                 Récapitulatif de votre demande
               </h3>
               <div className="space-y-3">
@@ -173,7 +173,7 @@ export default function ConfirmationPage() {
               </h3>
               <ol className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-full bg-or/20 text-or text-sm font-semibold flex items-center justify-center flex-shrink-0">
+                  <span className="w-6 h-6 rounded-full bg-primary/20 text-primary text-sm font-semibold flex items-center justify-center flex-shrink-0">
                     1
                   </span>
                   <div>
@@ -184,7 +184,7 @@ export default function ConfirmationPage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-full bg-or/20 text-or text-sm font-semibold flex items-center justify-center flex-shrink-0">
+                  <span className="w-6 h-6 rounded-full bg-primary/20 text-primary text-sm font-semibold flex items-center justify-center flex-shrink-0">
                     2
                   </span>
                   <div>
@@ -195,7 +195,7 @@ export default function ConfirmationPage() {
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-full bg-or/20 text-or text-sm font-semibold flex items-center justify-center flex-shrink-0">
+                  <span className="w-6 h-6 rounded-full bg-primary/20 text-primary text-sm font-semibold flex items-center justify-center flex-shrink-0">
                     3
                   </span>
                   <div>

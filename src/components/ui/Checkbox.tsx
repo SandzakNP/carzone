@@ -34,10 +34,10 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
             <div
               className={cn(
                 "w-5 h-5 border rounded transition-all duration-200",
-                "peer-focus:ring-2 peer-focus:ring-or/30 peer-focus:ring-offset-2 peer-focus:ring-offset-noir-deep",
-                "peer-checked:bg-or peer-checked:border-or",
+                "peer-focus:ring-2 peer-focus:ring-primary/30 peer-focus:ring-offset-2 peer-focus:ring-offset-noir-deep",
+                "peer-checked:bg-primary peer-checked:border-primary",
                 error ? "border-red-500/50" : "border-blanc/30",
-                "group-hover:border-or/50"
+                "group-hover:border-primary/50"
               )}
             />
             <Check className="absolute top-0.5 left-0.5 w-4 h-4 text-noir-deep opacity-0 peer-checked:opacity-100 transition-opacity" />

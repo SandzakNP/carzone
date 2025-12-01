@@ -95,7 +95,7 @@ export default function EspaceClientPage() {
                     onClick={() => setShowLogin(true)}
                     className={`flex-1 py-2 px-4 rounded-lg font-medium transition-all ${
                       showLogin
-                        ? "bg-or text-noir-deep"
+                        ? "bg-primary text-blanc"
                         : "bg-blanc/5 text-blanc/60 hover:bg-blanc/10"
                     }`}
                   >
@@ -106,7 +106,7 @@ export default function EspaceClientPage() {
                     onClick={() => setShowLogin(false)}
                     className={`flex-1 py-2 px-4 rounded-lg font-medium transition-all ${
                       !showLogin
-                        ? "bg-or text-noir-deep"
+                        ? "bg-primary text-blanc"
                         : "bg-blanc/5 text-blanc/60 hover:bg-blanc/10"
                     }`}
                   >
@@ -140,7 +140,7 @@ export default function EspaceClientPage() {
                         <input type="checkbox" className="rounded" />
                         Se souvenir de moi
                       </label>
-                      <Link href="#" className="text-or hover:underline">
+                      <Link href="#" className="text-primary hover:underline">
                         Mot de passe oublié ?
                       </Link>
                     </div>
@@ -223,8 +223,8 @@ export default function EspaceClientPage() {
           ].map((stat, index) => (
             <Card key={index} variant="glass" hover={false}>
               <CardContent className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-or/10 flex items-center justify-center">
-                  <stat.icon className="w-6 h-6 text-or" />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <stat.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <div className="text-2xl font-bold">{stat.value}</div>
@@ -264,8 +264,8 @@ export default function EspaceClientPage() {
                         className="flex items-center justify-between p-4 rounded-lg bg-noir-light/30 hover:bg-noir-light/50 transition-colors cursor-pointer"
                       >
                         <div className="flex items-center gap-4">
-                          <div className="w-10 h-10 rounded-lg bg-or/10 flex items-center justify-center">
-                            <Car className="w-5 h-5 text-or" />
+                          <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                            <Car className="w-5 h-5 text-primary" />
                           </div>
                           <div>
                             <p className="font-medium">{request.part}</p>
@@ -341,7 +341,7 @@ export default function EspaceClientPage() {
                     key={index}
                     className="flex items-center gap-3 p-3 rounded-lg bg-noir-light/30"
                   >
-                    <Car className="w-5 h-5 text-or" />
+                    <Car className="w-5 h-5 text-primary" />
                     <div>
                       <p className="font-medium">
                         {vehicle.brand} {vehicle.model}

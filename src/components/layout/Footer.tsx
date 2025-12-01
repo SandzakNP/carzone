@@ -54,7 +54,7 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-6">
-              <Car className="w-10 h-10 text-or" />
+              <Car className="w-10 h-10 text-primary" />
               <div className="flex flex-col">
                 <span className="text-2xl font-bold font-montserrat text-gradient-gold">
                   CarZone
@@ -71,14 +71,14 @@ export function Footer() {
             <div className="space-y-3">
               <a
                 href="mailto:contact@carzone.fr"
-                className="flex items-center gap-3 text-blanc/60 hover:text-or transition-colors"
+                className="flex items-center gap-3 text-blanc/60 hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5" />
                 contact@carzone.fr
               </a>
               <a
                 href="tel:+33123456789"
-                className="flex items-center gap-3 text-blanc/60 hover:text-or transition-colors"
+                className="flex items-center gap-3 text-blanc/60 hover:text-primary transition-colors"
               >
                 <Phone className="w-5 h-5" />
                 01 23 45 67 89
@@ -100,7 +100,7 @@ export function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-blanc/60 hover:text-or transition-colors"
+                    className="text-blanc/60 hover:text-primary transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -119,7 +119,7 @@ export function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-blanc/60 hover:text-or transition-colors"
+                    className="text-blanc/60 hover:text-primary transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -138,7 +138,7 @@ export function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-blanc/60 hover:text-or transition-colors"
+                    className="text-blanc/60 hover:text-primary transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -162,7 +162,7 @@ export function Footer() {
                 href={social.href}
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-2 rounded-full bg-blanc/5 text-blanc/60 hover:bg-or/10 hover:text-or transition-colors"
+                className="p-2 rounded-full bg-blanc/5 text-blanc/60 hover:bg-primary/10 hover:text-primary transition-colors"
                 aria-label={social.label}
               >
                 <social.icon className="w-5 h-5" />
@@ -175,7 +175,7 @@ export function Footer() {
             onClick={scrollToTop}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="p-3 rounded-full bg-or/10 text-or hover:bg-or hover:text-noir-deep transition-all"
+            className="p-3 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-blanc transition-all"
             aria-label="Retour en haut"
           >
             <ArrowUp className="w-5 h-5" />

@@ -48,7 +48,7 @@ export default function ProfilPage() {
             <Card variant="glass">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <User className="w-5 h-5 text-or" />
+                  <User className="w-5 h-5 text-primary" />
                   Informations Personnelles
                 </CardTitle>
               </CardHeader>
@@ -85,7 +85,7 @@ export default function ProfilPage() {
             <Card variant="glass">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Mail className="w-5 h-5 text-or" />
+                  <Mail className="w-5 h-5 text-primary" />
                   Coordonnées
                 </CardTitle>
               </CardHeader>
@@ -115,7 +115,7 @@ export default function ProfilPage() {
             <Card variant="glass">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-or" />
+                  <MapPin className="w-5 h-5 text-primary" />
                   Adresse
                 </CardTitle>
               </CardHeader>
@@ -156,7 +156,7 @@ export default function ProfilPage() {
             <Card variant="glass">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Bell className="w-5 h-5 text-or" />
+                  <Bell className="w-5 h-5 text-primary" />
                   Préférences de Notification
                 </CardTitle>
               </CardHeader>
@@ -185,7 +185,7 @@ export default function ProfilPage() {
             <Card variant="glass">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-or" />
+                  <Shield className="w-5 h-5 text-primary" />
                   Sécurité
                 </CardTitle>
               </CardHeader>
