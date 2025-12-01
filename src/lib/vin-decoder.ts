@@ -63,10 +63,5 @@ export async function decodeVIN(vin: string): Promise<VINDecodeResult> {
   };
 }
 
-export function validateVIN(vin: string): boolean {
-  if (vin.length !== 17) return false;
-  const invalidChars = /[IOQ]/i;
-  if (invalidChars.test(vin)) return false;
-  const validPattern = /^[A-HJ-NPR-Z0-9]{17}$/i;
-  return validPattern.test(vin);
-}
+// Re-export the validation function for backward compatibility
+export { isValidVIN as validateVIN } from "./validations";

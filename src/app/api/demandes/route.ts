@@ -1,8 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 import { generateRequestNumber } from "@/lib/utils";
 
+// Request data interface
+interface PartRequest {
+  requestNumber: string;
+  status: string;
+  createdAt: string;
+  updatedAt: string;
+  [key: string]: unknown;
+}
+
 // In-memory storage for demo (would use database in production)
-const requests: Map<string, unknown> = new Map();
+const requests: Map<string, PartRequest> = new Map();
 
 export async function POST(request: NextRequest) {
   try {

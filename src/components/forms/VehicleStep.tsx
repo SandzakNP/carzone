@@ -31,9 +31,10 @@ const brands = [
   { value: "other", label: "Autre" },
 ];
 
-const years = Array.from({ length: 36 }, (_, i) => ({
-  value: String(2025 - i),
-  label: String(2025 - i),
+const currentYear = new Date().getFullYear();
+const years = Array.from({ length: currentYear - 1989 }, (_, i) => ({
+  value: String(currentYear - i),
+  label: String(currentYear - i),
 }));
 
 const motorizations = [

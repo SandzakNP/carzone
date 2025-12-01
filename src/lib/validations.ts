@@ -1,11 +1,19 @@
 import { z } from "zod";
 
-// VIN validation (17 characters, no I, O, Q)
+// VIN validation pattern (17 characters, no I, O, Q)
+const VIN_PATTERN = /^[A-HJ-NPR-Z0-9]{17}$/i;
+
+// Reusable VIN validation function
+export function isValidVIN(vin: string): boolean {
+  return vin.length === 17 && VIN_PATTERN.test(vin);
+}
+
+// VIN Zod schema
 export const vinSchema = z
   .string()
   .length(17, "Le VIN doit contenir exactement 17 caractères")
   .regex(
-    /^[A-HJ-NPR-Z0-9]{17}$/i,
+    VIN_PATTERN,
     "Le VIN ne peut contenir que des lettres (sauf I, O, Q) et des chiffres"
   );
 
