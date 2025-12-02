@@ -168,12 +168,12 @@ export default function DemandesPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 * index }}
                 >
-                  <Card variant="glass" className="hover:border-or/30 transition-colors cursor-pointer">
+                  <Card variant="glass" className="hover:border-primary/30 transition-colors cursor-pointer">
                     <CardContent className="p-6">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-4">
                         {/* Icon */}
-                        <div className="w-14 h-14 rounded-xl bg-or/10 flex items-center justify-center flex-shrink-0">
-                          <Car className="w-7 h-7 text-or" />
+                        <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                          <Car className="w-7 h-7 text-primary" />
                         </div>
 
                         {/* Main Info */}
@@ -216,7 +216,7 @@ export default function DemandesPage() {
                             {request.quote && (
                               <>
                                 <span className="text-blanc/40">•</span>
-                                <span className="text-or font-semibold">
+                                <span className="text-primary font-semibold">
                                   Devis: {request.quote}
                                 </span>
                               </>

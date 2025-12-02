@@ -20,7 +20,7 @@ export function Card({
   const variants = {
     default: "bg-noir-dark border-blanc/10",
     glass: "glass",
-    outline: "bg-transparent border-or/30",
+    outline: "bg-transparent border-primary/30",
   };
 
   return (
@@ -32,7 +32,7 @@ export function Card({
       className={cn(
         "rounded-2xl border p-6 transition-all duration-300",
         variants[variant],
-        hover && "hover:shadow-luxury hover:border-or/30",
+        hover && "hover:shadow-luxury hover:border-primary/30",
         className
       )}
     >

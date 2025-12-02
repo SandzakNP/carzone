@@ -37,7 +37,7 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-noir-deep/95 backdrop-blur-md shadow-lg border-b border-or/10"
+          ? "bg-noir-deep/95 backdrop-blur-md shadow-lg border-b border-primary/10"
           : "bg-transparent"
       )}
     >
@@ -49,7 +49,7 @@ export function Header() {
               whileHover={{ scale: 1.05, rotate: 5 }}
               transition={{ type: "spring", stiffness: 400 }}
             >
-              <Car className="w-10 h-10 text-or" />
+              <Car className="w-10 h-10 text-primary" />
             </motion.div>
             <div className="flex flex-col">
               <span className="text-2xl font-bold font-montserrat text-gradient-gold">
@@ -70,7 +70,7 @@ export function Header() {
                 className={cn(
                   "relative text-sm font-medium transition-colors duration-200",
                   pathname === link.href
-                    ? "text-or"
+                    ? "text-primary"
                     : "text-blanc/70 hover:text-blanc"
                 )}
               >
@@ -78,7 +78,7 @@ export function Header() {
                 {pathname === link.href && (
                   <motion.div
                     layoutId="activeNav"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-or"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -125,7 +125,7 @@ export function Header() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden bg-noir-deep/98 backdrop-blur-lg border-b border-or/10"
+            className="lg:hidden bg-noir-deep/98 backdrop-blur-lg border-b border-primary/10"
           >
             <div className="container mx-auto px-4 py-6">
               <div className="flex flex-col gap-4">
@@ -136,7 +136,7 @@ export function Header() {
                     className={cn(
                       "py-3 px-4 rounded-lg text-base font-medium transition-all",
                       pathname === link.href
-                        ? "bg-or/10 text-or"
+                        ? "bg-primary/10 text-primary"
                         : "text-blanc/70 hover:bg-blanc/5 hover:text-blanc"
                     )}
                   >

@@ -66,9 +66,9 @@ export function OptionsStep() {
       </div>
 
       {selectedUrgency === "tres_urgent" && (
-        <Card variant="glass" className="border-or/30 bg-or/5">
+        <Card variant="glass" className="border-primary/30 bg-primary/5">
           <CardContent>
-            <p className="text-sm text-or">
+            <p className="text-sm text-primary">
               ⚡ <strong>Demande très urgente</strong> - Notre équipe prioritaire
               vous contactera dans les plus brefs délais. Des frais de service
               express peuvent s&apos;appliquer.
@@ -88,11 +88,11 @@ export function OptionsStep() {
           label={
             <>
               J&apos;ai lu et j&apos;accepte les{" "}
-              <Link href="#" className="text-or hover:underline">
+              <Link href="#" className="text-primary hover:underline">
                 conditions générales de vente
               </Link>{" "}
               et la{" "}
-              <Link href="#" className="text-or hover:underline">
+              <Link href="#" className="text-primary hover:underline">
                 politique de confidentialité
               </Link>
               . *
@@ -123,7 +123,7 @@ export function OptionsStep() {
             </div>
             <div className="flex justify-between py-2">
               <span className="text-blanc/60">Délai de réponse estimé</span>
-              <span className="text-or font-medium">24h maximum</span>
+              <span className="text-primary font-medium">24h maximum</span>
             </div>
           </div>
         </CardContent>

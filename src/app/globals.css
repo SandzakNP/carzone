@@ -8,9 +8,10 @@
   --noir-deep: #0a0a0a;
   --noir-dark: #1a1a1a;
   --noir-light: #2a2a2a;
-  --or: #d4af37;
-  --or-light: #f4e4bc;
-  --or-dark: #b8960c;
+  --primary: #2d5a87;
+  --primary-navy: #1a3a5c;
+  --primary-light: #4a90b8;
+  --primary-pale: #e8f1f8;
   --blanc: #ffffff;
   --blanc-off: #f8f8f8;
 }
@@ -47,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(26, 26, 26, 0.7);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(45, 90, 135, 0.15);
   }
 
   .glass-light {
@@ -57,9 +58,9 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  /* Gold gradient text */
+  /* Blue gradient text */
   .text-gradient-gold {
-    background: linear-gradient(135deg, #d4af37 0%, #f4e4bc 50%, #d4af37 100%);
+    background: linear-gradient(135deg, #4a90b8 0%, #2d5a87 50%, #1a3a5c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -67,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Premium button styles */
   .btn-premium {
-    @apply relative overflow-hidden px-8 py-4 font-semibold text-noir-deep bg-gradient-to-r from-or to-or-light rounded-lg transition-all duration-300 ease-out;
+    @apply relative overflow-hidden px-8 py-4 font-semibold text-blanc bg-gradient-to-r from-primary to-primary-light rounded-lg transition-all duration-300 ease-out;
     @apply hover:shadow-luxury hover:scale-[1.02] active:scale-[0.98];
   }
 
@@ -89,13 +90,13 @@ h1, h2, h3, h4, h5, h6 {
   /* Premium card */
   .card-premium {
     @apply glass rounded-2xl p-6 transition-all duration-300;
-    @apply hover:shadow-luxury-lg hover:border-or/30;
+    @apply hover:shadow-luxury-lg hover:border-primary/30;
   }
 
   /* Form input styles */
   .input-premium {
     @apply w-full px-4 py-3 bg-noir-light/50 border border-blanc/10 rounded-lg text-blanc placeholder-blanc/40;
-    @apply focus:outline-none focus:border-or/50 focus:ring-1 focus:ring-or/30 transition-all duration-300;
+    @apply focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/30 transition-all duration-300;
   }
 
   .label-premium {
@@ -112,11 +113,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--or);
+    background: var(--primary);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--or-light);
+    background: var(--primary-light);
   }
 }

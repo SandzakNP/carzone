@@ -52,8 +52,8 @@ export default function RecherchePage() {
           {benefits.map((benefit, index) => (
             <Card key={index} variant="glass" hover={false}>
               <CardContent className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-or/10 flex items-center justify-center flex-shrink-0">
-                  <benefit.icon className="w-6 h-6 text-or" />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <benefit.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-semibold">{benefit.title}</h3>

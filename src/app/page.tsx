@@ -100,12 +100,12 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 bg-gradient-to-br from-noir-deep via-noir-dark to-noir-deep" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(212,175,55,0.1),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(212,175,55,0.05),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(45,90,135,0.15),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(45,90,135,0.08),transparent_50%)]" />
         
         {/* Animated grid pattern */}
         <div className="absolute inset-0 opacity-[0.03]">
-          <div className="h-full w-full bg-[linear-gradient(to_right,#d4af37_1px,transparent_1px),linear-gradient(to_bottom,#d4af37_1px,transparent_1px)] bg-[size:60px_60px]" />
+          <div className="h-full w-full bg-[linear-gradient(to_right,#2d5a87_1px,transparent_1px),linear-gradient(to_bottom,#2d5a87_1px,transparent_1px)] bg-[size:60px_60px]" />
         </div>
 
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -115,7 +115,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-or/10 border border-or/30 text-or text-sm font-medium mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-medium mb-6">
                 <Star className="w-4 h-4" />
                 Service Premium de Recherche de Pièces
               </span>
@@ -227,8 +227,8 @@ export default function Home() {
               <motion.div key={index} variants={itemVariants}>
                 <Card variant="glass" className="h-full">
                   <CardContent>
-                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-or/20 to-or/5 flex items-center justify-center mb-4">
-                      <feature.icon className="w-7 h-7 text-or" />
+                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-4">
+                      <feature.icon className="w-7 h-7 text-primary" />
                     </div>
                     <h3 className="text-lg font-semibold font-montserrat mb-2">
                       {feature.title}
@@ -293,13 +293,13 @@ export default function Home() {
             ].map((item, index) => (
               <motion.div key={index} variants={itemVariants}>
                 <div className="relative">
-                  <div className="absolute -top-4 -left-4 text-8xl font-bold font-montserrat text-or/10">
+                  <div className="absolute -top-4 -left-4 text-8xl font-bold font-montserrat text-primary/10">
                     {item.step}
                   </div>
                   <Card variant="glass" className="relative z-10">
                     <CardContent className="pt-8">
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-or to-or-light flex items-center justify-center mb-4">
-                        <item.icon className="w-7 h-7 text-noir-deep" />
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-primary-light flex items-center justify-center mb-4">
+                        <item.icon className="w-7 h-7 text-blanc" />
                       </div>
                       <h3 className="text-xl font-semibold font-montserrat mb-3">
                         {item.title}
@@ -361,7 +361,7 @@ export default function Home() {
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star
                           key={i}
-                          className="w-5 h-5 text-or fill-current"
+                          className="w-5 h-5 text-primary fill-current"
                         />
                       ))}
                     </div>
@@ -369,8 +369,8 @@ export default function Home() {
                       &ldquo;{testimonial.content}&rdquo;
                     </p>
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-or/30 to-or/10 flex items-center justify-center">
-                        <Users className="w-6 h-6 text-or" />
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center">
+                        <Users className="w-6 h-6 text-primary" />
                       </div>
                       <div>
                         <div className="font-semibold">{testimonial.name}</div>
@@ -389,8 +389,8 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-or/10 via-or/5 to-or/10" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(212,175,55,0.1),transparent_70%)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(45,90,135,0.15),transparent_70%)]" />
 
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <motion.div

@@ -21,7 +21,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             className="block text-sm font-medium text-blanc/80 mb-2"
           >
             {label}
-            {props.required && <span className="text-or ml-1">*</span>}
+            {props.required && <span className="text-primary ml-1">*</span>}
           </label>
         )}
         <input
@@ -30,7 +30,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           type={type}
           className={cn(
             "w-full px-4 py-3 bg-noir-light/50 border rounded-lg text-blanc placeholder-blanc/40",
-            "focus:outline-none focus:border-or/50 focus:ring-1 focus:ring-or/30 transition-all duration-300",
+            "focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/30 transition-all duration-300",
             error
               ? "border-red-500/50 focus:border-red-500 focus:ring-red-500/30"
               : "border-blanc/10",
